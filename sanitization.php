@@ -1,3 +1,4 @@
+<?php
 /**
  * Checkbox sanitization callback example.
  *
