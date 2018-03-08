@@ -6,7 +6,7 @@
  */
 function login_designer_customize_register( $wp_customize ) {
 
-	// Add custom control.
+  // Add custom control.
   require get_parent_theme_file_path( 'customizer-controls/toggle/class-login-designer-toggle.php' );
   
   // Register the custom control type.
