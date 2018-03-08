@@ -15,13 +15,13 @@ function login_designer_customize_register( $wp_customize ) {
   // Add an option to disable the logo.
   $wp_customize->add_setting( 'login_designer[disable_logo]', array(
     'default'           => 'false',
-    'type' 			        => 'option',
+    'type'              => 'option',
     'transport'         => 'postMessage',
     'sanitize_callback' => login_designer_sanitize_checkbox(),
   ) );
 
   $wp_customize->add_control( new Login_Designer_Toggle_Control( $wp_customize, 'login_designer[disable_logo]', array(
-    'label'       => esc_html__( 'Disable Logo', 'login-designer' ),
+    'label'       => esc_html__( 'Enable Logo', 'login-designer' ),
     'section'     => 'login_designer__section--styles',
     'type'        => 'toggle',
     'settings'    => 'login_designer[disable_logo]',
