@@ -1,9 +1,5 @@
 <?php
 /**
- * Theme Customizer functionality
- */
-
-/**
  * Customizer.
  *
  * @param WP_Customize_Manager $wp_customize the Customizer object.
