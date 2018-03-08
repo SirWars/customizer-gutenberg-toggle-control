@@ -21,7 +21,7 @@ function login_designer_customize_register( $wp_customize ) {
   ) );
 
   $wp_customize->add_control( new Login_Designer_Toggle_Control( $wp_customize, 'login_designer[disable_logo]', array(
-    'label'	      => esc_html__( 'Disable Logo', 'login-designer' ),
+    'label'       => esc_html__( 'Disable Logo', 'login-designer' ),
     'section'     => 'login_designer__section--styles',
     'type'        => 'toggle',
     'settings'    => 'login_designer[disable_logo]',
