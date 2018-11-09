@@ -23,7 +23,7 @@ function text_domain_customizer_register( $wp_customize ) {
     'label'       => esc_html__( 'Example Toggle', 'text-domain' ),
     'section'     => 'text_domain_toggle',
     'type'        => 'text-domain-gutenberg-toggle',
-    'settings'    => 'gutenberg_example_toggle',
+    'settings'    => 'text_domain_gutenberg_toggle',
   ) ) );
 }
 add_action('customize_register', 'text_domain_customizer_register');
