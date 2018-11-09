@@ -8,7 +8,7 @@
  * @param bool $checked Whether the checkbox is checked.
  * @return bool Whether the checkbox is checked.
  */
-function login_designer_sanitize_checkbox( $checked ) {
+function text_domain_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true === $checked ) ? true : false );
 }
