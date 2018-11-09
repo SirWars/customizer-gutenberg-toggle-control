@@ -12,7 +12,7 @@ function text_domain_customizer_register( $wp_customize ) {
   // Register the custom control type.
   $wp_customize->register_control_type( 'Text_Domain_Gutenberg_Toggle_Control' );
   
-  // Add an option to disable the logo.
+  // Add an option
   $wp_customize->add_setting( 'text_domain_gutenberg_toggle', array(
     'default'           => false,
     'transport'         => 'refresh',
