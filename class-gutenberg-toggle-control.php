@@ -76,7 +76,7 @@ class Customizer_Gutenberg_Toggle_Control extends WP_Customize_Control {
 	 * @see    WP_Customize_Control::print_template()
 	 *
 	 * @access protected
-	 * @since  1.3.4
+	 * @since  1.0.0
 	 * @return void
 	 */
 	protected function content_template() {
