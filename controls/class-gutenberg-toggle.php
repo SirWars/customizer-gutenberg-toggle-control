@@ -84,7 +84,7 @@ class Text_Domain_Gutenberg_Toggle_Control extends WP_Customize_Control {
         <div class="components-base-control components-toggle-control">
             <div class="components-base-control__field">
                 <# if ( data.label ) { #>
-                <label for="inspector-toggle-control-{{ data.id }}" class="components-toggle-control__label">{{ data.label }}</label>
+                <label for="inspector-toggle-control-{{ data.id }}" class="components-toggle-control__label customize-control-title">{{ data.label }}</label>
                 <# } #>
                 <span class="components-form-toggle <# if ( data.value ) { #>is-checked<# } #>">
                     <input class="components-form-toggle__input" id="inspector-toggle-control-{{ data.id }}" type="checkbox" value="{{ data.value }}" {{{ data.link }}} <# if ( data.value ) { #> checked="checked" <# } #> />
@@ -102,7 +102,7 @@ class Text_Domain_Gutenberg_Toggle_Control extends WP_Customize_Control {
                 </span>
             </div>
             <# if ( data.description ) { #>
-            <p id="inspector-toggle-control-{{ data.id }}__help" class="components-base-control__help">{{ data.description }}</p>
+            <p id="inspector-toggle-control-{{ data.id }}__help" class="components-base-control__help customize-panel-description description">{{ data.description }}</p>
             <# } #>
         </div>
 	<?php
