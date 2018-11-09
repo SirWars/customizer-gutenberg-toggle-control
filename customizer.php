@@ -4,7 +4,7 @@
  *
  * @param WP_Customize_Manager $wp_customize the Customizer object.
  */
-function text_domain_gutenberg_toggle_register( $wp_customize ) {
+function text_domain_customizer_register( $wp_customize ) {
 
   // Add custom control.
   require get_parent_theme_file_path( 'inc/customizer/controls/class-gutenberg-toggle.php' );
@@ -26,7 +26,7 @@ function text_domain_gutenberg_toggle_register( $wp_customize ) {
     'settings'    => 'gutenberg_example_toggle',
   ) ) );
 }
-add_action('customize_register', 'text_domain_gutenberg_toggle_register');
+add_action('customize_register', 'text_domain_customizer_register');
 
 
 /**
