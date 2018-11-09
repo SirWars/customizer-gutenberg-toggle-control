@@ -1,6 +1,6 @@
 ( function( $, api ) {
 
-		api.controlConstructor['toggle'] = api.Control.extend( {
+		api.controlConstructor['text-domain-gutenberg-toggle'] = api.Control.extend( {
 	
 			ready: function() {
 				var control = this;
