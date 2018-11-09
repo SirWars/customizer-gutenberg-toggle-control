@@ -15,7 +15,7 @@ function text_domain_gutenberg_toggle_register( $wp_customize ) {
   // Add an option to disable the logo.
   $wp_customize->add_setting( 'text_domain_gutenberg_toggle', array(
     'default'           => false,
-    'transport'         => 'postMessage',
+    'transport'         => 'refresh',
     'sanitize_callback' => 'text_domain_sanitize_checkbox',
   ) );
 
