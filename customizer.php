@@ -4,27 +4,27 @@
  *
  * @param WP_Customize_Manager $wp_customize the Customizer object.
  */
-function login_designer_customize_register( $wp_customize ) {
+function text_domain_gutenberg_toggle_register( $wp_customize ) {
 
   // Add custom control.
-  require get_parent_theme_file_path( 'customizer-controls/toggle/class-login-designer-toggle.php' );
+  require get_parent_theme_file_path( 'inc/customizer/controls/class-gutenberg-toggle-control.php' );
   
   // Register the custom control type.
-  $wp_customize->register_control_type( 'Login_Designer_Toggle_Control' );
+  $wp_customize->register_control_type( 'Text_Domain__Gutenberg_Toggle_Control' );
   
   // Add an option to disable the logo.
-  $wp_customize->add_setting( 'login_designer[disable_logo]', array(
+  $wp_customize->add_setting( 'text_domain_gutenberg_toggle', array(
     'default'           => false,
-    'type'              => 'option',
     'transport'         => 'postMessage',
-    'sanitize_callback' => 'login_designer_sanitize_checkbox',
+    'sanitize_callback' => 'text_domain_sanitize_checkbox',
   ) );
 
-  $wp_customize->add_control( new Login_Designer_Toggle_Control( $wp_customize, 'login_designer[disable_logo]', array(
-    'label'       => esc_html__( 'Enable Logo', 'login-designer' ),
-    'section'     => 'login_designer__section--styles',
+  $wp_customize->add_control( new Login_Designer_Toggle_Control( $wp_customize, 'text_domain_gutenberg_toggle', array(
+    'label'       => esc_html__( 'Example Toggle', 'text-domain' ),
+    'section'     => 'text_domain_toggle',
     'type'        => 'toggle',
-    'settings'    => 'login_designer[disable_logo]',
+    'settings'    => 'gutenberg_example_toggle',
   ) ) );
 }
+add_action('customize_register', 'text_domain_gutenberg_toggle_register');
 
