@@ -81,7 +81,7 @@ input[type="checkbox"] {
 .components-toggle-control
   .components-base-control__field
   .components-form-toggle {
-  margin-left: auto;
+  margin: 4px 0 0 auto;
 }
 .components-form-toggle .components-form-toggle__track {
   background-color: transparent;
