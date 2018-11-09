@@ -18,7 +18,7 @@ if ( ! class_exists( 'WP_Customize_Control' ) ) {
  *
  * @access public
  */
-class Login_Designer_Toggle_Control extends WP_Customize_Control {
+class Customizer_Gutenberg_Toggle_Control extends WP_Customize_Control {
 
 	/**
 	 * The type of customize control.
@@ -27,7 +27,7 @@ class Login_Designer_Toggle_Control extends WP_Customize_Control {
 	 * @since  1.3.4
 	 * @var    string
 	 */
-	public $type = 'toggle';
+	public $type = 'customizer-gutenberg-toggle';
 
 	/**
 	 * Enqueue scripts and styles.
@@ -37,8 +37,8 @@ class Login_Designer_Toggle_Control extends WP_Customize_Control {
 	 * @return void
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'login-designer-toggle-control-styles', get_parent_theme_file_uri( 'customizer-controls/toggle/toggle.css' ), false, '1.0.0', 'all' );
-		wp_enqueue_script( 'login-designer-toggle-control-scripts', get_parent_theme_file_uri( 'customizer-controls/toggle/toggle.js' ), array( 'jquery' ), '1.0.0', true );
+		wp_enqueue_style( 'customizer-gutenberg-toggle-control-styles', get_parent_theme_file_uri( 'inc/customizer/assets/toggle.css' ), false, '1.0.0', 'all' );
+		wp_enqueue_script( 'customizer-gutenberg-toggle-control-scripts', get_parent_theme_file_uri( 'inc/customizer/assets/toggle.js' ), array( 'jquery' ), '1.0.0', true );
 	}
 
 	/**
